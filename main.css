@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+header{
+    background: linear-gradient(90deg, rgb(174, 171, 228) 0%, rgb(160, 5, 199) 35%, rgb(0, 119, 255) 100%);
+    padding: 16px 0;
+    color: white;
+    display: flex;
+    border-bottom: 16px solid rgb(134, 53, 210);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;    
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+    background-color: rgba(212, 209, 209, 0.459);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+form h2{
+    margin-bottom: 16px;
+}
+
+input, button{
+    padding: 8px;
+    
+}
+
+button{
+    background: linear-gradient(90deg, rgb(17, 5, 246) 0%, rgb(193, 102, 221) 35%, rgb(157, 0, 255) 100%);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(253, 251, 251);
+}
+#botaoReset{
+    background: linear-gradient(90deg, rgb(250, 4, 4) 0%, rgb(131, 5, 243) 35%, rgb(255, 0, 0) 100%);
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+max-width: 25%;
+list-style: none;
+position: relative;
+max-width: 280px;
+overflow-y:hidden;
+}
+
+ul li img{
+    width: 100%;
+    
+    
+}
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.70);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .8s;
+}
+.overlay-imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
